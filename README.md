@@ -21,3 +21,4 @@ chrome.alarms (optional) – For periodic data sync or reminders.
 chrome.webNavigation (optional) – Tracks page visits more granularly.
 
 #OUTPUT
+![Image](https://github.com/user-attachments/assets/47ba0a01-ef21-416a-8fea-a907a4c41eda)
