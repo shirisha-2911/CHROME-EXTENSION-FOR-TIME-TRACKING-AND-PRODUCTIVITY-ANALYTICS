@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Tracker Settings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="options-container">
+    <h1>Time Tracker Settings</h1>
+    
+    <div class="settings-section">
+      <h2>Website Categories</h2>
+      <p>Define which websites belong to which categories:</p>
+      
+      <div class="category-group">
+        <h3>Productive Sites</h3>
+        <div id="productive-sites-list" class="sites-list"></div>
+        <div class="add-site">
+          <input type="text" id="new-productive-site" placeholder="Add productive site (e.g., github.com)">
+          <button id="add-productive-site">Add</button>
+        </div>
+      </div>
+      
+      <div class="category-group">
+        <h3>Unproductive Sites</h3>
+        <div id="unproductive-sites-list" class="sites-list"></div>
+        <div class="add-site">
+          <input type="text" id="new-unproductive-site" placeholder="Add unproductive site (e.g., facebook.com)">
+          <button id="add-unproductive-site">Add</button>
+        </div>
+      </div>
+      
+      <div class="category-group">
+        <h3>Neutral Sites</h3>
+        <div id="neutral-sites-list" class="sites-list"></div>
+        <div class="add-site">
+          <input type="text" id="new-neutral-site" placeholder="Add neutral site (e.g., wikipedia.org)">
+          <button id="add-neutral-site">Add</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="settings-section">
+      <h2>Notifications</h2>
+      <label>
+        <input type="checkbox" id="enable-notifications">
+        Enable notifications when spending too much time on unproductive sites
+      </label>
+      <div class="notification-settings">
+        <label>
+          Time limit (minutes):
+          <input type="number" id="notification-time-limit" min="1" value="30">
+        </label>
+      </div>
+    </div>
+    
+    <div class="settings-section">
+      <h2>Data Management</h2>
+      <button id="export-data">Export Data</button>
+      <button id="import-data">Import Data</button>
+      <button id="clear-data">Clear All Data</button>
+    </div>
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html>

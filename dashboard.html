@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Productivity Dashboard</h1>
+    
+    <div class="time-period-selector">
+      <button id="today-btn">Today</button>
+      <button id="week-btn">This Week</button>
+      <button id="month-btn">This Month</button>
+    </div>
+    
+    <div class="stats-overview">
+      <div class="stat-card productive">
+        <h3>Productive</h3>
+        <p id="productive-time">0h 0m</p>
+      </div>
+      <div class="stat-card unproductive">
+        <h3>Unproductive</h3>
+        <p id="unproductive-time">0h 0m</p>
+      </div>
+      <div class="stat-card neutral">
+        <h3>Neutral</h3>
+        <p id="neutral-time">0h 0m</p>
+      </div>
+    </div>
+    
+    <div class="chart-container">
+      <canvas id="timeChart"></canvas>
+    </div>
+    
+    <div class="top-sites">
+      <h3>Top Sites</h3>
+      <table id="top-sites-table">
+        <thead>
+          <tr>
+            <th>Site</th>
+            <th>Time</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    
+    <button id="generate-report">Generate Weekly Report</button>
+  </div>
+  
+  <script src="dashboard.js"></script>
+</body>
+</html>
